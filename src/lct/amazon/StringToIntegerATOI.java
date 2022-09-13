@@ -29,7 +29,10 @@ public class StringToIntegerATOI {
 			index++;
 		}
 		
-		index = index -1;
+		if (index > 0) {
+			index = index -1;
+		}
+		
 		
 		// clean all whitespace on string
 		while(index < n && s.charAt(index) == ' ') {
@@ -76,6 +79,8 @@ public class StringToIntegerATOI {
 		System.out.println(sti.myAtoi("-100"));
 		
 		System.out.println(sti.myAtoi("   -999 number 666"));
+		
+		System.out.println(sti.myAtoi("000200"));
 
 	}
 
